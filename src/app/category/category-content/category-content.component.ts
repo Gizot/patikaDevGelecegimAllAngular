@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Category } from '../category';
 
 @Component({
   selector: 'app-category-content',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./category-content.component.css']
 })
 export class CategoryContentComponent {
+  category: Category = {
+    categoryId: 0,
+    name: "",
+    creationDate: "",
+  }
+  
 
 }
